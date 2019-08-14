@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>xCoinMoney_bitcoin_litecoin_primecoin_dogecoin</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/gpl-license.php">GNU General Public License</license>
     <channel>community</channel>
     <extends/>
     <summary>Bitcoins/Litecoins/Primecoins/Dogecoins payments in Magento  with xCoinMoney extension.</summary>
     <description>Start accepting Bitcoins/Litecoins/Primecoins/Dogecoins for goods and services in Your Magento-powered online store. xCoinMoney Plugin for Magento will help extend the functionality of your store to receive payments in the cryptocurrencies.</description>
-    <notes>First preview release</notes>
-    <authors><author><name>xcoinmoney</name><user>xcoinmoney</user><email>xcoinmoney_plugins@safe-mail.net</email></author></authors>
+    <notes>Fixed module dependencies</notes>
+    <authors><author><name>xCoinMoney</name><user>xcoinmoney</user><email>xcoinmoney_plugins@safe-mail.net</email></author></authors>
     <date>2014-05-20</date>
-    <time>11:33:02</time>
+    <time>11:49:10</time>
     <contents><target name="magecommunity"><dir name="Coinmoney"><dir name="Block"><file name="Form.php" hash="d8b42e7f3dfc689db9632ad57b449082"/></dir><dir name="Model"><file name="Ipn.php" hash="61be242ca39f06ec1047bbf8620ce255"/><file name="PaymentMethod.php" hash="33b52ee3bc4ff2e3c0be7692bee1bee6"/><dir name="Resource"><dir name="Ipn"><file name="Collection.php" hash="f0262e083a5e2bb29bbbef318e72e1e9"/></dir><file name="Ipn.php" hash="0e00ac36e5a6d30503af08619885a306"/></dir><dir name="Source"><file name="Speed.php" hash="8303638eac9ce7724aed18595a118366"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="b6f9799de9c61bb8759d360c72c08702"/></dir><dir name="etc"><file name="config.xml" hash="e3a77af2c588e7b88bdf51de659dff45"/><file name="system.xml" hash="9faea00cefd29423194e0639e017b185"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="coinmoney.xml" hash="7d069b2b7bd8979df908c981f24bbc2f"/></dir><dir name="template"><dir name="coinmoney"><file name="form.phtml" hash="8b9e0d025be65ebfd596b99defb9f42b"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Coinmoney.xml" hash="4d1b385e8f2c858a217a26c11bd36709"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.4.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.6.0.0</min><max>1.7</max></package></required></dependencies>
+    <dependencies><required><php><min>5.4.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
