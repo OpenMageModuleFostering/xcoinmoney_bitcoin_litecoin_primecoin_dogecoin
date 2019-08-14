@@ -81,7 +81,7 @@
                 <coinmoney_url>https://www.xcoinmoney.com/api</coinmoney_url>
                
 				<fullscreen>0</fullscreen>
-				<currencies>USD, EUR, LTC, BTC, DOGE, XPM</currencies>
+				<currencies>USD, LTC, BTC, DOGE, XPM</currencies>
 				<payment_action>authorize</payment_action>
 			</Coinmoney>
 		 </payment>

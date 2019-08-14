@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",
-    "description": "Bitcoins/Litecoins/Primecoins/Dogecoins payments in Magento  with xCoinMoney extension.",
+    "description": "Bitcoins/Litecoins/Primecoins/Dogecoins payments in Magento with xCoinMoney extension.",
     "authors": [
     {
         "name": "xCoinMoney",
