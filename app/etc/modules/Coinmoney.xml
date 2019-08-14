@@ -1,0 +1,11 @@
+<config>
+	<modules>
+		<Coinmoney>
+			<active>true</active>
+			<codePool>community</codePool>
+			<depends>
+				<Mage_Payment />
+			</depends>
+		</Coinmoney>
+	</modules>
+</config>

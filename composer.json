@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/xCoinMoney_bitcoin_litecoin_primecoin_dogecoin",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License",
+    "homepage": "",
+    "description": "Bitcoins/Litecoins/Primecoins/Dogecoins payments in Magento  with xCoinMoney extension.",
+    "authors": [
+    {
+        "name": "xcoinmoney",
+        "email": "xcoinmoney_plugins@safe-mail.net"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

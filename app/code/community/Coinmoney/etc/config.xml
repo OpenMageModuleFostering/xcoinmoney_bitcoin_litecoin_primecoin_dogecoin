@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<config>
+	<frontend>
+        <routers>
+            <coinmoney_callback>
+                <use>standard</use>
+                <args>
+                    <module>Coinmoney</module>
+                    <frontName>coinmoney_callback</frontName>
+                </args>
+            </coinmoney_callback>
+        </routers>
+        <layout>			
+            <updates>
+                <coinmoney>
+                    <file>coinmoney.xml</file>
+                </coinmoney>
+            </updates>
+        </layout>
+    </frontend>
+
+	<modules>
+	   <Coinmoney>
+			<!-- for database updates -->
+		  <version>1.1.0</version>
+	   </Coinmoney>
+	</modules>
+ 
+	<global>
+		<blocks>
+			<coinmoney>
+				<class>Coinmoney_Block</class>
+			</coinmoney>
+		</blocks>
+
+		<models>
+			<Coinmoney>
+				<class>Coinmoney_Model</class>
+				<resourceModel>Coinmoney_resource</resourceModel>
+			</Coinmoney>
+			<Coinmoney_resource>
+				<class>Coinmoney_Model_Resource</class>
+				<entities>
+					<ipn>
+						<table>coinmoney_ipns</table>
+					</ipn>
+				</entities>
+			</Coinmoney_resource>
+		</models>
+	 
+		<resources>
+			<Coinmoney_setup> <!-- keep this uppercase or you'll get duplicate errors -->
+				<setup>
+					<!-- which module to look for install/upgrade files in -->
+					<module>Coinmoney</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</Coinmoney_setup>
+			<Coinmoney_write>
+				<connection>
+				  <use>core_write</use>
+				</connection>
+			</Coinmoney_write>
+			<Coinmoney_read>
+			   <connection>
+				<use>core_read</use>
+			  </connection>
+			</Coinmoney_read>
+		</resources>
+	</global> 
+	
+	<default>
+		<payment>
+			<Coinmoney>
+				<active>1</active>
+				<model>Coinmoney/paymentMethod</model>
+				<title>Coinmoney Payment</title>
+				<speed>low</speed>
+                <coinmoney_url>https://www.xcoinmoney.com/api</coinmoney_url>
+               
+				<fullscreen>0</fullscreen>
+				<currencies>USD, EUR, LTC, BTC, DOGE, XPM</currencies>
+				<payment_action>authorize</payment_action>
+			</Coinmoney>
+		 </payment>
+	</default>
+</config>
