@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/xCoinMoney_bitcoin_litecoin_primecoin_dogecoin",
+    "name": "openmage-module-fostering\/xcoinmoney_bitcoin_litecoin_primecoin_dogecoin",
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",

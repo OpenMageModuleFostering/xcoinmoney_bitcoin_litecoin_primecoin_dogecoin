@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Bitcoins/Litecoins/Primecoins/Dogecoins payments in Magento with xCoinMoney extension.
